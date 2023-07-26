@@ -1,45 +1,45 @@
 # capturaTweetCitat
-Bot de twitter que rep un tweet i fa captura de pantalla del tweet citat
-## Funcionament
-El compte de twitter del bot és [@CitatBot](https://twitter.com/CitatBot)
-Per fer-lo servir no cal seguir-lo, però és útil, ja que per etiquetar-lo et sortirà abans
-### Veure tweet citat
-La funcionalitat principal és veure el tweet citat per un tweet. 
-Posem que hi ha un tweet X, que cita un tweet Y. Pots veure el tweet X, però l'autor del tweet Y et té bloquejat. 
-Respon al tweet X etiquetant al bot (@CitatBot), i el bot s'encarregarà d'entrar-hi, fer captura i respondre't amb ella
-### Veure tweet respost
-Posem que tens un tweet X que respon a un tweet Y. Com abans, pots veure el tweet X, però no el tweet Y.
-Respon al tweet X de la mateixa manera, i el bot farà el mateix
-Nota: si el tweet X també té citat un tweet, això no funcionarà
-### Privadesa
-Actualment tothom pot veure com sol·licites el tweet i el bot et respon. Està en desenvolupament una opció que consistirà en passar-li el tweet per MD (missatge directe) i enviar la captura també per MD. 
-No obstant, com que el bot el faig en estones lliures quan tinc ganes de programar, i a la vegada estic programant altres coses, pot trigar una mica
-## Preguntes:
-### Per què serveix?
-Mai t'has trobat amb un tweet criticant un altre tweet, però no pots veure què diu perquè et té bloquejat?
-Has hagut d'entrar amb finestra d'incògnit, o bé demanar captura de pantalla?
-Aquest bot ho automatitza per tu
-Respon a un tweet etiquetant al bot, i ell entrarà al tweet citat a fer captura
+Bot de twitter que recibe un tweet y hace captura de pantalla del tweet citado
+## Funcionamiento
+La cuenta de twitter del bot es [@CitatBot](https://twitter.com/CitatBot)
+Para utilizarlo no es necesario seguirlo, pero es útil, ya que para etiquetarlo te saldrá antes
+### Ver tweet citado
+La funcionalidad principal es ver el tweet citado por un tweet.
+Pongamos que hay un tweet X, que cita un tweet Y. Puedes ver el tweet X, pero el autor del tweet Y te tiene bloqueado.
+Responde al tweet X etiquetando al bot (@CitatBot), y el bot se encargará de entrar, hacer captura y responder con ella
+### Ver tweet respondido
+Pongamos que tienes un tweet X que responde a un tweet Y. Como antes, puedes ver el tweet X, pero no el tweet Y.
+Responde al tweet X del mismo modo, y el bot hará lo mismo
+Nota: si el tweet X también tiene citado un tweet, esto no funcionará
+### Privacidad
+Actualmente todo el mundo puede ver cómo solicitas el tweet y el bot te responde. Está en desarrollo una opción que consistirá en pasarle el tweet por MD (mensaje directo) y enviar la captura también por MD.
+Sin embargo, como el bote lo hago en ratos libres cuando tengo ganas de programar, ya la vez estoy programando otras cosas, puede tardar un poco
+## Preguntas:
+### ¿Para qué sirve?
+Nunca te has encontrado con un tweet criticando a otro tweet, pero ¿no puedes ver qué dice porque te tiene bloqueado?
+¿Has tenido que entrar con ventana de incógnito, o pedir captura de pantalla?
+Este bot lo automatiza por ti
+Responde a un tweet etiquetando en el bot, y él entrará en el tweet citado a hacer captura
 
-### Pot capturar qualsevol tweet?
-No. No pot hackejar twitter :(
-El seu funcionament és que entra al tweet sense haver iniciat sessió i li fa captura. Això vol dir que pot capturar qualsevol tweet d'un compte **públic**, mentre que els tweets privats no els podrà capturar
+### ¿Puede capturar cualquier tweet?
+No. No puede hackear twitter :(
+Su funcionamiento es que entra en el tweet sin haber iniciado sesión y le hace captura. Esto significa que puede capturar cualquier tweet de una cuenta **pública**, mientras que los tweets privados no los podrá capturar
 
-### I no poden bloquejar-lo?
-Poden bloquejar el bot. Però seguirà funcionant, ja que la captura la fa sense haver iniciat sessió
+### ¿Y no pueden bloquearlo?
+Pueden bloquear el bot. Pero seguirá funcionando, ya que la captura la realiza sin haber iniciado sesión
 
-### No és poc ètic això?
-No. El bot només permet fer captures de pantalla a tweets públics. Són tweets que pots veure igualment si tanques la sessió, o si hi entres des d'un altre compte. El que fa aquest bot és automatitzar-ho, però no et dóna cap informació que no tinguis accessible
+### ¿No es poco ético esto?
+No. El bote sólo permite realizar capturas de pantalla en tweets públicos. Son tweets que puedes ver igualmente si cierras la sesión, o si entras desde otra cuenta. Lo que hace este bot es automatizarlo, pero no te da ninguna información que no tengas accesible
 
-## Vull utilitzar el programa
-El programa es troba sota la llicència GNU GPLv3 (Llicència Pública General de GNU, versió 3). Pots consultar-la [aquí](https://github.com/oriolmarti97/capturaTweetCitat/blob/master/LICENSE). Es tracta d'una llicència de [Software Lliure](https://www.gnu.org/philosophy/free-sw.ca.html) i [copyleft](https://www.gnu.org/licenses/copyleft.html). Fonamentalment, el que vol dir això és que pots utilitzar-lo, modificar-lo i redistribuir-lo (amb o sense modificacions), sempre que el codi conservi la mateixa llicència
-No obliga a avisar a l'autor de cap mena de modificació o redistribució. No obstant, t'agrairé que si fas alguna millora contactis amb mi, de manera que jo també la pugui aplicar. 
-### Com faig per executar-lo jo?
-El primer és, lògicament, descarregar el codi font. 
-El programa està pensat per correr en un servidor Ubuntu sense entorn gràfic, ja que és el que faig servir. No obstant, hauria de funcionar en qualsevol sistema basat en Unix que tingui instal·lats els programes **cutycapt** i **xvfp**, així com **python 3** i **pip**. Aquesta instal·lació, però, no cal fer-la a mà, sinó que la pots fer utilitzant el script [setup.sh](https://github.com/oriolmarti97/capturaTweetCitat/blob/master/setup.sh). Aquest script requereix tenir instal·lat apt, bash, wget i python 3, que són paquets que acostumen a estar instal·lats a tot arreu. Podeu modificar-lo si us cal
-Executant-lo tindreu preparat l'entorn per executar el programa
+## Quiero utilizar el programa
+El programa se encuentra bajo la licencia GNU GPLv3 (Licencia Pública General de GNU, versión 3). Puedes consultarla [aquí](https://github.com/oriolmarti97/capturaTweetCitat/blob/master/LICENSE). Se trata de una licencia de [Software Libre](https://www.gnu.org/philosophy/free-sw.es.html) y [copyleft](https://www.gnu.org/licenses/copyleft .html). Fundamentalmente, lo que esto significa es que puedes utilizarlo, modificarlo y redistribuirlo (con o sin modificaciones), siempre que el código conserve la misma licencia
+No obliga a avisar al autor de ningún tipo de modificación o redistribución. Sin embargo, te agradeceré que si haces alguna mejora contactes conmigo, de modo que yo también la pueda aplicar.
+### ¿Cómo hago para ejecutarlo yo?
+Lo primero es, lógicamente, descargar el código fuente.
+El programa está pensado para correr en un servidor Ubuntu sin entorno gráfico, ya que es el que utilizo. Sin embargo, debería funcionar en cualquier sistema basado en Unix que tenga instalados los programas **cutycapt** y **xvfp**, así como **python 3** y **pip**. Sin embargo, esta instalación no es necesario hacerla a mano, sino que la puedes hacer utilizando el script [setup.sh](https://github.com/oriolmarti97/capturaTweetCitat/blob/master/setup.sh). Este script requiere tener instalado apt, bash, wget y python 3, que son paquetes que suelen estar instalados en todas partes. Puede modificarlo si necesita
+Ejecutándolo tendrá preparado el entorno para ejecutar el programa
 
-Haureu de crear un arxiu **key.py**, que declari quatre variables que seran les claus per accedir al bot. Aquest arxiu ha sigut afegit conscientment al .gitignore, perquè no voldria que ningú accedís al bot sense permís. Les quatre variables es diran consumer_key, consumer_secret, access_token, access_token_secret, i te les proporciona Twitter
+Deberá crear un archivo **key.py**, que declare cuatro variables que serán las claves para acceder al bot. Este archivo ha sido añadido conscientemente al .gitignore, porque no quisiera que nadie accediera al bote sin permiso. Las cuatro variables se llamarán consumer_key, consumer_secret, access_token, access_token_secret, y te las proporciona Twitter
 
-Finalment executeu l'arxiu [server.sh](https://github.com/oriolmarti97/capturaTweetCitat/blob/master/server.sh). Aquest arxiu executa infinitament el bot redirigint les seves sortides a dos arxius que faran de logs. Si en algun moment un error tanca el bot, tornarà a obrir-se automàticament gràcies a això
-Per comoditat pots crear un servei utilitzant la comanda systemctl. Pots trobar-ne més informació a internet. Això permet que el bot arrenqui en arrencar la màquina
+Finalmente ejecute el archivo [server.sh](https://github.com/oriolmarti97/capturaTweetCitat/blob/master/server.sh). Este archivo ejecuta infinitamente el bot redirigiendo sus salidas a dos archivos que harán de logs. Si en algún momento un error cierra el bote, volverá a abrirse automáticamente gracias a ello
+Por comodidad puedes crear un servicio utilizando el comando systemctl. Puedes encontrar más información en Internet. Esto permite que el bote arranque al arrancar la máquina
